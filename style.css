@@ -226,6 +226,11 @@ header ul {
 header a {
   color: #fff;
   font-size: 1.8rem;
+  transition: 0.3s;
+}
+header a:hover {
+  color: #c21a1a;
+  font-size: 1.8rem;
 }
 
 .box:nth-child(2) ul li {
@@ -649,14 +654,29 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .div2 ul li {
   font-size: 1.4rem;
   color: #3d3d3d;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 5, 48, 1) 0%,
+    rgba(5, 5, 51, 1) 54%,
+    rgba(179, 9, 9, 1) 100%
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
   background-color: #bdbdbd;
   padding: 10px;
   border-radius: 5px;
+  transition: background-size 0.5s ease, color 0.3s ease;
+}
+
+.div2 ul li:hover {
+  background-size: 100% 100%;
+  color: #fff;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -679,7 +699,7 @@ main {
   main {
     width: 90vw;
   }
-  .header_tudo {
+  .tudo {
     width: 90vw;
   }
 }
@@ -693,7 +713,7 @@ main {
   main {
     width: 100vw;
   }
-  .header_tudo {
+  .tudo {
     width: 100vw;
   }
 }
@@ -717,7 +737,7 @@ main {
     flex-direction: column;
     padding: 20px 0px;
   }
-  .header_tudo {
+  .tudo {
     flex-direction: column;
     padding: 20px 0px;
   }
